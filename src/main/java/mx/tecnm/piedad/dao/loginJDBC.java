@@ -5,6 +5,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 import mx.tecnm.piedad.models.Cuenta;
 
+// Este es el login que lee el token que se realiza al coinsidir usuario y contrseña
 public class loginJDBC {
 
 	@Autowired
