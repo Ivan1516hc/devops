@@ -15,7 +15,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 		http.csrf().disable()
 		.addFilterAfter(new JWTAuthorizationFilter(),UsernamePasswordAuthenticationFilter.class)
 		.authorizeRequests()
-		.antMatchers(org.springframework.http.HttpMethod.POST,"/api/login").permitAll()
+		.antMatchers("/**").permitAll()
 		.anyRequest().authenticated();
 	}
 }
