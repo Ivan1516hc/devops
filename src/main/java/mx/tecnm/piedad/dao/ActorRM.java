@@ -13,7 +13,8 @@ public class ActorRM implements RowMapper<Actores> {
 		// TODO Auto-generated method stub
 		Actores actores=new Actores();
 		actores.setId(rs.getInt("id"));
-		actores.setNombre_completo(rs.getString("nombre_completo"));
+		actores.setNombre_completo(rs.getString("nombre"));
+		actores.setActivo(rs.getInt("activo"));
 		return actores;
 	}
 
