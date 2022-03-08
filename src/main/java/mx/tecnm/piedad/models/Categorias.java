@@ -1,9 +1,12 @@
 package mx.tecnm.piedad.models;
 
 public class Categorias {
+	
 	private int id;
 	private String clasificacion;
 	private String descripcion;
+	private int activo;
+	
 	public int getId() {
 		return id;
 	}
@@ -22,4 +25,11 @@ public class Categorias {
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
+	public int getActivo() {
+		return activo;
+	}
+	public void setActivo(int activo) {
+		this.activo = activo;
+	}
+	
 }

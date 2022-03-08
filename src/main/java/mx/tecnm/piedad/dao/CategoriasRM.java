@@ -8,13 +8,15 @@ import mx.tecnm.piedad.models.Categorias;
 
 public class CategoriasRM implements RowMapper<Categorias> {
 
-	@Override
-	public Categorias mapRow(ResultSet rs, int rowNum) throws SQLException {
-		// TODO Auto-generated method stub
-		Categorias categorias=new Categorias();
-		categorias.setId(rs.getInt("id"));
-		categorias.setClasificacion(rs.getString("clasificacion"));
-		categorias.setDescripcion(rs.getString("descripcion"));
-		return categorias;
-	}
+		@Override
+		public Categorias mapRow(ResultSet rs, int rowNum) throws SQLException {
+			// TODO Auto-generated method stub
+			Categorias categorias=new Categorias();
+			categorias.setId(rs.getInt("id"));
+			categorias.setClasificacion(rs.getString("clasificacion"));
+			categorias.setDescripcion(rs.getString("descripcion"));
+			categorias.setActivo(rs.getInt("activo"));
+			return categorias;
+		}
+
 }
