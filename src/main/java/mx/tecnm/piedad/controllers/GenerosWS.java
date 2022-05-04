@@ -24,6 +24,7 @@ public class GenerosWS {
 	@Autowired
 	GenerosJDBC repo;
 	
+	//Listado de generos
 	@GetMapping
 	public ResponseEntity<?> consultar() {
 		List<Generos> resultado=repo.consultar();
